@@ -3,13 +3,35 @@
 2. Execute o arquivo jmeter ou jmeter.bat (Windows).
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/f410fd3d-034d-49c9-88dd-a42f4d396aca" width="500" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/341ed141-765d-4db0-9a18-cdfcb86d9d3b" width="1000" />
 </p> 
 
-### Análise dos resultados 90th percentil | GUI (Interface Gráfica)
+Gráfico demonstrando o Ramp Up:
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/9e284a0d-1979-42e8-8a99-0fe89b929694" width="500" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/4a18b803-8e7c-48de-ac67-5353429e1a22" width="1000" />
+</p> 
+
+Este gráfico é o resultado da rampagem baseado nos parâmetros informados. Veja que ele foi adicionando as threads (TC) gradativamente até atingir os 1 segundo (RU) e, partir deste ponto, ele seguiu executando requisições simultaneamente e continuamente durante 1 segundos (HT). A duração total dos testes é a soma de RU + HT, que neste caso foi 1 + 1 = 2 segundos. Em resumo, o teste ocorreu conforme esperado.
+
+### Análise dos resultados | GUI (Interface Gráfica)
+
+<p float="left">
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/a708170f-8e5d-4e55-93f1-08f5c5dc4a78" width="1000" />
+</p>
+
+O gráfico acima exibe os tempos de resposta (não há nenhum cálculo ou mediana aqui)
+
+### Análise dos resultados tempo de resposta 90th percentil| GUI (Interface Gráfica)
+
+<p float="left">
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/b794befd-a144-41cd-b886-5722ba1fa000" width="1000" />
+</p>
+
+Por fim, o relatório de resumo nos traz informações do percentual de erros:
+
+<p float="left">
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/6b352471-499a-446c-a63e-a169cbb17d85" width="1000" />
 </p>
 
  ### Executando o JMeter | Não-GUI/CLI (Linha de Comando)
