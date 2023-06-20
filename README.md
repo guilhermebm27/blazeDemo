@@ -3,13 +3,13 @@
 2. Execute o arquivo jmeter ou jmeter.bat (Windows).
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/341ed141-765d-4db0-9a18-cdfcb86d9d3b" width="1000" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/197513e2-489f-4c75-ac96-641d0c5cf3ff" width="1000" />
 </p> 
 
 Gráfico demonstrando o Ramp Up:
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/4a18b803-8e7c-48de-ac67-5353429e1a22" width="1000" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/a5907c8b-1998-4203-9813-0e9b0b313e16" width="1000" />
 </p> 
 
 Este gráfico é o resultado da rampagem baseado nos parâmetros informados. Veja que ele foi adicionando as threads (TC) gradativamente até atingir os 1 segundo (RU) e, partir deste ponto, ele seguiu executando requisições simultaneamente e continuamente durante 1 segundos (HT). A duração total dos testes é a soma de RU + HT, que neste caso foi 1 + 1 = 2 segundos. Em resumo, o teste ocorreu conforme esperado.
@@ -17,7 +17,7 @@ Este gráfico é o resultado da rampagem baseado nos parâmetros informados. Vej
 ### Análise dos resultados | GUI (Interface Gráfica)
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/a708170f-8e5d-4e55-93f1-08f5c5dc4a78" width="1000" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/f4bfcb3c-843a-44a9-b04e-ad3ee919b98d" width="1000" />
 </p>
 
 O gráfico acima exibe os tempos de resposta (não há nenhum cálculo ou mediana aqui)
@@ -25,7 +25,18 @@ O gráfico acima exibe os tempos de resposta (não há nenhum cálculo ou median
 ### Análise dos resultados tempo de resposta 90th percentil| GUI (Interface Gráfica)
 
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/b794befd-a144-41cd-b886-5722ba1fa000" width="1000" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/06b41579-e95c-48ab-98ba-455c5d239af1" width="1000" />
+</p>
+
+Olhando para o gráfico de percentil, na posição de 90% obtivemos o tempo:
+
+blaze_demo_home: 2161 <br/>
+blaze_demo_reserva: 1789 <br/>
+blaze_demo_info_reserva: 2161 <br/>
+blaze_demo_confirmation: 1070
+
+<p float="left">
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/ca46479d-6803-4674-ba66-497448b6f204" width="1000" />
 </p>
 
 Por fim, o relatório de resumo nos traz informações do percentual de erros:
@@ -38,6 +49,7 @@ Por fim, o relatório de resumo nos traz informações do percentual de erros:
 Executando teste no JMeter no modo Não-GUI, obtemos um consumo menor de memória do processo, com isso, permitindo maior escalabilidade de Threads no teste.
 
 Para executar o JMeter via linha de comando:
+
 Exemplo:
 <p float="left">
  <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/111b0bb8-fa73-4ad6-9461-39152875dc2e" width="500" />
@@ -45,7 +57,7 @@ Exemplo:
 
 ### Análise dos resultados | Não-GUI/CLI (Linha de Comando)
 <p float="left">
- <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/68be9762-7081-4dd7-8b6c-ad3729cb0fc5" width="1000" />
+ <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/2d196be9-bafd-4219-9bd7-c6d186749e84" width="1000" />
 </p>
 
 ---------------------------------------------------------------------
