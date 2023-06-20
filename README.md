@@ -12,7 +12,7 @@ Gráfico demonstrando o Ramp Up:
  <img src="https://github.com/guilhermebm27/blazeDemo/assets/31962792/4a18b803-8e7c-48de-ac67-5353429e1a22" width="1000" />
 </p> 
 
-Este gráfico é o resultado da rampagem baseado nos parâmetros informados. Veja que ele foi adicionando as threads (TC) gradativamente até atingir os 1 segundo (RU) e, partir deste ponto, ele seguiu executando requisições simultaneamente e continuamente durante 1 segundos (HT). A duração total dos testes é a soma de RU + HT, que neste caso foi 1 + 1 = 2 segundos. Em resumo, o teste ocorreu conforme esperado.
+Este gráfico é o resultado da rampagem baseado nos parâmetros informados. Ele foi adicionando as threads (TC) gradativamente até atingir os 1 segundo (RU) e, partir deste ponto, ele seguiu executando requisições simultaneamente e continuamente durante 1 segundos (HT). A duração total dos testes é a soma de RU + HT, que neste caso foi 1 + 1 = 2 segundos. Em resumo, o teste ocorreu conforme esperado.
 
 ### Análise dos resultados | GUI (Interface Gráfica)
 
